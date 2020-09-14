@@ -1,105 +1,152 @@
 :root {
-    --fond:#272635;
-    --fondGagnant:#7FD8BE;
-    --fondPerdant:#D16D82;
-    --fondEgalite:#3F88C5;
-  }
-     
-  
-  /*Menu partie*/
-  body {
-    width:100vw;
-    height:100vh;
-    box-sizing:border-box;
-    margin:0;
-  }
-  
-  .fondEcran {
-    position:absolute;
-    z-index:-1;
-    background-color:var(--fond);
-    width:100%;
-    height:100%;
-  }
-  
-  .boxForm {
-    display: block;
-    background-color:#F0BCD4;
-    width:280px;
-    border-radius:20px;
-    position:relative;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    
-  }
-  
-  .formulaire {
-    padding:20px;
-  }
-  
-  #caseNom {
-    height:40px;
-    border-radius:20px;
-    border:0;
-    width:100%;
-    margin-bottom:10px;
-    opacity:0.5;
-  }
-  
-  .choixPeau {
-    display:flex;
-    justify-content:space-around;
-    margin-bottom:10px;
-  }
-  
-  #choix  {
-    height:40px;
-    border-radius:20px;
-    border:0;
-    width:100%;
-    appearance:none;
-    margin-bottom:10px;
-    opacity:0.5;
-  }
-  
-  #boutonJouer {
-    height:40px;
-    border-radius:20px;
-    border:0;
-    width:100%;
-    margin-top:10px;
-  }
-
-  .nomJoueur {
-    position:absolute;
-    left:25%;
-    font-size:20px;
-  }
+  --fond:#272635;
+  --fondGagnant:#7FD8BE;
+  --fondPerdant:#D16D82;
+  --fondEgalite:#3F88C5;
+}
 
 
-  .nomCPU
+/*Menu partie*/
+body {
+  width:100vw;
+  height:100vh;
+  box-sizing:border-box;
+  margin:0;
+}
+
+.fondEcran {
+  position:absolute;
+  background-color:var(--fond);
+  width:100%;
+  height:100%;
+}
+
+.boxForm {
+  display: block;
+  background-color:#F0BCD4;
+  width:280px;
+  border-radius:20px;
+  position:relative;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.formulaire {
+  padding:20px;
+}
+
+.caseNom {
+  height:40px;
+  border-radius:20px;
+  border:0;
+  width:100%;
+  margin-bottom:10px;
+  opacity:0.5;
+}
+
+.choixPeau {
+  display:flex;
+  justify-content:space-around;
+  margin-bottom:10px;
+}
+
+#choix  {
+  height:40px;
+  border-radius:20px;
+  border:0;
+  width:100%;
+  appearance:none;
+  margin-bottom:10px;
+  opacity:0.5;
+}
+
+#boutonJouer {
+  height:40px;
+  border-radius:20px;
+  border:0;
+  width:100%;
+  margin-top:10px;
+}
+
+.partieJeu {
+  display:none;
+  text-transform: uppercase;
+  font-family:Arial;
+}
+
+.joueur {
+  position:absolute;
+  left:35%;
+  font-size:40px;
+}
+
+.nomCPU {
+  position:absolute;
+  right:35%;
+  font-size:40px;
+}
+
+.choixJoueurs {
+  font-size:100px;
+  display:flex;
+  justify-content:space-around;
+  align-content:center;
+  } 
 
 
-  .resultat {
-    position:absolute;
-    left:50%;
-    bottom:80px;
-    transform:translate(-50%, -50%);
-    font-size:40px;
-  }
+.choixJoueur {
+margin: 0;
+position: absolute;
+top: 30%;
+left:20%;
+} 
 
-  #boutonRejouer {
-    height:40px;
-    border-radius:20px;
-    border:0;
-    width:200px;
-    position:absolute;
-    left:50%;
-    bottom:20px;
-    transform:translate(-50%, -50%);
-  }
+.choixCPU {
+margin: 0;
+position: absolute;
+top: 30%;
+right:20%;
+}
+
+.fondJoueur {
+  position:absolute;
+  top:0;
+  right:50%;
+  z-index:-1;
+  width:50%;
+  height:100%;
+}
+
+.fondCPU {
+  position:absolute;
+  top:0;
+  left:50%;
+  z-index:-1;
+  width:50%;
+  height:100%;
+}
+
+.resultat {
+  position:absolute;
+  left:50%;
+  bottom:80px;
+  transform:translate(-50%, -50%);
+  font-size:40px;
+}
+
+#boutonRejouer {
+  height:40px;
+  border-radius:20px;
+  border:0;
+  width:200px;
+  position:absolute;
+  left:50%;
+  bottom:20px;
+  transform:translate(-50%, -50%);
   
-  
-  /*Partie en train d'être jouée*/
-  
+}
+
+
+/*Partie en train d'être jouée*/
